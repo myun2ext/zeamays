@@ -1,6 +1,8 @@
+# For Zeamays cob scheme.
+
 module Zeamays
   class Cob
-    module Trait
+    module Gene
     end
   end
 end
