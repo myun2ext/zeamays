@@ -1,8 +1,8 @@
 module Zeamays
   class Corn
     class Fruiter
-      module Integer
-        def self.fruit_integer(value)
+      module OfFixnum
+        def self.fruit_fixnum(value)
         end
       end
     end
