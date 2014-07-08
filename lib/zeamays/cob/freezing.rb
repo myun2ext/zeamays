@@ -1,6 +1,11 @@
 module Zeamays
   class Cob
-    class Freezing
+    module Freezing
+      def freeze
+        @rows.collect { |row|
+          row.pack(pattern)
+        }.join("")
+      end
     end
   end
 end
