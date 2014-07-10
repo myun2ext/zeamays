@@ -4,7 +4,7 @@ module Zeamays
   class Cob
     module Gene
       @gene = nil
-      def sequencing(*pattern)
+      def gene_sequencing(*pattern)
         @gene = pattern
       end
     end
