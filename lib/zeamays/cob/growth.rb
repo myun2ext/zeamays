@@ -1,14 +1,17 @@
 module Zeamays
   class Cob
-    module Base
+    module Growth
       @rows = []
 
       def initialize(rows = [])
         @rows = rows
       end
 
-      def grow(row)
+      def grow!(*row)
         @rows << row
+      end
+      def grow(*row)
+        grow!(row)
       end
     end
   end
