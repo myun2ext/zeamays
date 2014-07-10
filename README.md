@@ -1,6 +1,6 @@
 # Zeamays
 
-TODO: Write a gem description
+Minimum Database gem for Ruby (notSQL)
 
 ## Installation
 

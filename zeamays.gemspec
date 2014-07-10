@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Zeamays::VERSION
   spec.authors       = ["myun2"]
   spec.email         = ["myun2@nwhite.info"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Minimum Database gem for Ruby (notSQL)}
+  spec.description   = %q{Minimum Database gem for Ruby (notSQL)}
   spec.homepage      = ""
   spec.license       = "MIT"
 
