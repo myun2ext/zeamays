@@ -9,5 +9,9 @@ module Zeamays
     include Growth
     include Freezing
     extend Defreezing
+
+    def [](index)
+      @rows[index]
+    end
   end
 end

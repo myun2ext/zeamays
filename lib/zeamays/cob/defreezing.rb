@@ -13,6 +13,14 @@ module Zeamays
         unpacked_list
       end
 
+      def defreeze(freezed)
+        cob = Cob.new
+        unpack(freezed).each do |row|
+          cob.grow!(row)
+        end
+        cob
+      end
+
       private
       def tail_pattern
         'a*'

@@ -7,6 +7,13 @@ module Zeamays
         }.join("")
       end
 
+      def freeze
+        pack
+      end
+      def freezed
+        pack
+      end
+
       module ClassMethods
         def package_pattern
           gene_sequence.map { |type|
