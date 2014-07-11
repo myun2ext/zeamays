@@ -23,7 +23,7 @@ Or install it yourself as:
 Declare Modeling for
 
 ```ruby
-class ExampleCobClass < Zeamays::Cob
+class YellowSweet < Zeamays::Cob
   gene_sequencing :i8, :i16, :integer, :string
 end
 ```
@@ -44,9 +44,29 @@ Use for `grow` or `grow!` method(`grow` method is alias for `grow!`).
 for example
 
 ```ruby
-yellow_sweet = ExampleCobClass.new
+yellow_sweet = YellowSweet.new
 yellow_sweet.grow 30, 2000, 500000, "test"
 ```
+
+## Packing (Serialization)
+
+Use for `pack` method.
+
+```ruby
+yellow_sweet.pack
+```
+
+returned **serialized** String.
+
+## Unpacking (Deserialization)
+
+Use for `unpack` **class method**.
+
+```ruby
+YellowSweet.unpack(packed_string)
+```
+
+returned **deserialized** values.
 
 ## Contributing
 
