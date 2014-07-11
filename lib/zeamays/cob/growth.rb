@@ -15,7 +15,7 @@ module Zeamays
       end
 
       def grow(*row)
-        grow!(row)
+        grow!(*row)
       end
     end
   end
