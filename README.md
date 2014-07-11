@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/myun2ext/zeamays.svg?branch=master)](https://travis-ci.org/myun2ext/zeamays)
 
-Minimum Database gem for Ruby (notSQL)
+**Zeamays** is **Simple Persistation Any Data** for Ruby.
 
 ## Installation
 
