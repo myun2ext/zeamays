@@ -8,8 +8,8 @@ module Zeamays
       end
 
       def grow!(*row)
-        if row.is_a? Array and row.length == 1
-          row = *row
+        if row.is_a? Array and row.length == 1 and row[0].is_a? Array
+          row = row[0]
         end
         @rows << row
       end
