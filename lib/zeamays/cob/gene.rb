@@ -3,9 +3,14 @@
 module Zeamays
   class Cob
     module Gene
-      @gene = nil
+      @gene = []
+
       def gene_sequencing(*pattern)
         @gene = pattern
+      end
+
+      def gene_sequence
+        @gene
       end
     end
   end
