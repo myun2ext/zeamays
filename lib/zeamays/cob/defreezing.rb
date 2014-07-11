@@ -10,6 +10,7 @@ module Zeamays
           left_string = unpacked.pop
           unpacked_list << unpacked
         end
+        unpacked_list
       end
 
       private
