@@ -12,7 +12,8 @@ module Zeamays
         end
       end
 
-      private def tail_pattern
+      private
+      def tail_pattern
         'a*'
       end
     end
