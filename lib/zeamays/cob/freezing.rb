@@ -15,7 +15,8 @@ module Zeamays
             when :i16 then 'n'
             when :i32 then 'N'
             when :integer then 'N'
-            when :string then 'A*'
+            #when :string then 'A*'
+            when :string then 'Z*'
           end
         }.join("")
       end
