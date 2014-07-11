@@ -9,7 +9,7 @@ module Zeamays
 
       private
       def package_pattern
-        @gene.map { |type|
+        self.class.gene_sequence.map { |type|
           case type
             when :i8 then 'C'
             when :i16 then 'n'
