@@ -11,7 +11,7 @@ module Zeamays
         @rows << row
       end
       def grow(*row)
-        grow!(row)
+        grow!(*row)
       end
     end
   end
