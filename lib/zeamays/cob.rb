@@ -1,14 +1,11 @@
 require 'zeamays/cob/gene'
-require 'zeamays/cob/base'
+require 'zeamays/cob/growth'
 require 'zeamays/cob/freezing'
 
 module Zeamays
   class Cob
-    #def grow(corns)
-    #end
-
-    include Gene
-    include Base
+    extend Gene
+    include Growth
     include Freezing
   end
 end
