@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["myun2@nwhite.info"]
   spec.summary       = %q{Minimum Database gem for Ruby (notSQL)}
   spec.description   = %q{Minimum Database gem for Ruby (notSQL)}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/myun2ext/zeamays"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
