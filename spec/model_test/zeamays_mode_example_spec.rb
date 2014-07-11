@@ -18,12 +18,12 @@ describe "Zeamays Model example" do
 
   let(:packaged) { cob.pack }
   let(:unpackaged) { example_cob_class.unpack(packaged) }
-  it { unpackaged.should eq [record1, record2] }
+  it { expect(unpackaged).to eq [record1, record2] }
 
   describe "#defreeze" do
     let(:freezed) { cob.freezed }
     let(:defreezed) { example_cob_class.defreeze(freezed) }
-    it { defreezed[0].should eq record1 }
-    it { defreezed[1].should eq record2 }
+    it { expect(defreezed[0]).to eq record1 }
+    it { expect(defreezed[1]).to eq record2 }
   end
 end
