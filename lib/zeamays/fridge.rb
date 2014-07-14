@@ -1,10 +1,8 @@
-require 'zeamays/cob'
-
 module Zeamays
   class Fridge
-    def self.stick(cob, path)
+    def self.stick(path, freezed)
       File.open(path, "wb") { |f|
-        f.write(cob.freeze)
+        f.write(freezed)
       }
     end
 
