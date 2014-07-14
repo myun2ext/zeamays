@@ -2,13 +2,15 @@
 
 [![Build Status](https://travis-ci.org/myun2ext/zeamays.svg?branch=master)](https://travis-ci.org/myun2ext/zeamays)
 
-**Zeamays** is Simple serialization for Ruby.
+**Zeamays** is simple serialization for Ruby.
 
 https://rubygems.org/gems/zeamays
 
 ## Usage
 
-Declare Modeling for
+### Declare Model
+
+Declare for Modeling. example at
 
 ```ruby
 class YellowSweet < Zeamays::Cob
@@ -16,9 +18,9 @@ class YellowSweet < Zeamays::Cob
 end
 ```
 
-columns declare use for `gene_sequencing` **class method**.
+This is **RDB Table like** declared. but **column has noname**. (Type delcare only!)
 
-Symbol use for Column type.
+Column Types for following
 
 * `:i8`: 1byte Integer (8bits)
 * `:i16`: 2byte Integer (16bits)
@@ -27,13 +29,15 @@ Symbol use for Column type.
 
 ## Add new Record
 
-Use for `grow` or `grow!` method(`grow` method is alias for `grow!`).
+Use for `grow` or `grow!` method. (`grow` method is alias for `grow!`)
 
 for example
 
 ```ruby
 yellow_sweet = YellowSweet.new
-yellow_sweet.grow 30, 2000, 500000, "test"
+yellow_sweet.grow!(30, 2000, 500000, "test")
+p yellow_sweet[0]
+=> [30, 2000, 500000, "test"]
 ```
 
 ## Packing (Serialization)
@@ -42,6 +46,7 @@ Use for `pack` method.
 
 ```ruby
 yellow_sweet.pack
+=> 
 ```
 
 returned **serialized** String.
@@ -54,7 +59,7 @@ Use for `unpack` **class method**.
 YellowSweet.unpack(packed_string)
 ```
 
-returned **deserialized** values.
+returned **deserialized** model instance.
 
 ## Persistation for File System
 
