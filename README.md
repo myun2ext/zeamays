@@ -46,7 +46,7 @@ Use for `pack` method.
 
 ```ruby
 yellow_sweet.pack
-=> 
+=> "\x1E\a\xD0\x00\a\xA1 test\x00"
 ```
 
 returned **serialized** String.
@@ -56,7 +56,8 @@ returned **serialized** String.
 Use for `unpack` **class method**.
 
 ```ruby
-YellowSweet.unpack(packed_string)
+YellowSweet.unpack("\x1E\a\xD0\x00\a\xA1 test\x00")
+ => #<Zeamays::Cob:0x007fdc0b538150 @rows=[[30, 2000, 500000, "test"]]>
 ```
 
 returned **deserialized** model instance.
