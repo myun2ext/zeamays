@@ -4,6 +4,8 @@
 
 **Zeamays** is **Simple Persistation Any Data** for Ruby.
 
+https://rubygems.org/gems/zeamays
+
 ## Installation
 
 Add this line to your application's Gemfile:
