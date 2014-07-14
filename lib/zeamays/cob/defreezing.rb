@@ -1,7 +1,7 @@
 module Zeamays
   class Cob
     module Defreezing
-      def unpack(packed_string)
+      def deserialized(packed_string)
         unpacked_list = []
 
         left_string = packed_string
@@ -15,11 +15,13 @@ module Zeamays
 
       def defreeze(freezed)
         cob = Cob.new
-        unpack(freezed).each do |row|
+        deserialized(freezed).each do |row|
           cob.grow!(row)
         end
         cob
       end
+      alias unpack defreeze
+      alias depack defreeze
 
       private
       def tail_pattern
