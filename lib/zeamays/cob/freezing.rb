@@ -6,13 +6,8 @@ module Zeamays
           row.pack(self.class.package_pattern)
         }.join("")
       end
-
-      def freeze
-        pack
-      end
-      def freezed
-        pack
-      end
+      alias freeze pack
+      alias freezed pack
 
       module ClassMethods
         def package_pattern
