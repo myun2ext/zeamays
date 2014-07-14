@@ -2,23 +2,9 @@
 
 [![Build Status](https://travis-ci.org/myun2ext/zeamays.svg?branch=master)](https://travis-ci.org/myun2ext/zeamays)
 
-**Zeamays** is **Simple Persistation Any Data** for Ruby.
+**Zeamays** is Simple serialization for Ruby.
 
 https://rubygems.org/gems/zeamays
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'zeamays'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install zeamays
 
 ## Usage
 
@@ -73,6 +59,20 @@ returned **deserialized** values.
 ## Persistation for File System
 
 TODO
+
+## Installation
+
+Add this line to your application's Gemfile:
+
+    gem 'zeamays'
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install zeamays
 
 ## Contributing
 
