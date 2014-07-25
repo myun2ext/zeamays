@@ -64,7 +64,19 @@ returned **deserialized** model instance.
 
 ## Persistation for File System
 
-TODO
+Use `Zeamays::Fridge`
+
+### saving
+```ruby
+Zeamays::Fridge.stick('./tmp/yellow_sweet.db', yellow_sweet.freezed)
+```
+
+### loading
+```ruby
+serialized = Zeamays::Fridge.take('./tmp/yellow_sweet.db')
+yellow_sweet = YellowSweet.defreeze(serialized)
+ => #<Zeamays::Cob:0x007fdc0b538150 @rows=[[30, 2000, 500000, "test"]]>
+```
 
 ## Installation
 
